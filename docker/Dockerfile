@@ -10,7 +10,7 @@ RUN apt install -y build-essential \
 WORKDIR /service-template
 
 COPY service service/
-COPY poetry.lock pyproject.toml /st-service-template/
+COPY poetry.lock pyproject.toml /service-template/
 
 RUN poetry install --no-dev \
     && poetry shell \
